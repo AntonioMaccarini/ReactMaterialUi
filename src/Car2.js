@@ -3,12 +3,16 @@ import {
   BrowserRouter as Router,
   Link,
 } from "react-router-dom";
-
+import Header from './components/Header'
+import SideBraw from './components/SideBraw'
 function Car() {
   
     return ( 
     <div>
-      <h1>Select a car</h1>
+      <Header></Header>
+      <SideBraw></SideBraw>
+
+      {/* <h1>Select a car</h1>
       <ul>
           <li>
             <img src="data:image/jpeg;base64,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"  alt="batido"></img>
@@ -19,9 +23,9 @@ function Car() {
           <li>
             <img src="https://lh5.googleusercontent.com/p/AF1QipNjKWST_pZ3GkTZBcoc5T10yMMAAroQAviRUEWV=w92-h92-n-k-no"  alt="camionete"></img>
           </li>
-        </ul>
+        </ul> */}
 
-      <Router>
+      {/* <Router>
       <h2>Accounts</h2>
         <ul>
           <li>
@@ -29,7 +33,7 @@ function Car() {
             >Voltar para Cor</Link>
           </li>
         </ul>
-      </Router>
+      </Router> */}
     </div>
     )
     ;
