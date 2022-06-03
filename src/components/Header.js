@@ -1,6 +1,7 @@
 import * as React from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Avatar, Grid, Paper } from '@mui/material';
+import { IconButton } from '@mui/material';
 
 
 export default function BoxSx() {
@@ -14,8 +15,9 @@ export default function BoxSx() {
           >
             <Grid container spacing={0}>
               <Grid item xs={11}>
-               <MenuIcon
-                    onClick={console.log("eta")}
+               <IconButton
+                    component={MenuIcon}
+                    to="/"
                     sx={{
                     width: 40,
                     height: 40,
@@ -27,7 +29,7 @@ export default function BoxSx() {
                     backgroundColor: '#eeFeFe',
                     opacity: [0.9, 0.8, 0.7],
                     },
-                }}></MenuIcon> 
+                }}></IconButton> 
             </Grid>
             <Grid>
                 <Avatar alt="Remy Sharp" src="https://img.lovepik.com/element/45001/3052.png_860.png" 

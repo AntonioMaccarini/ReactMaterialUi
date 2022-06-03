@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 import FolderIcon from '@mui/icons-material/Folder';
 import PageviewIcon from '@mui/icons-material/Pageview';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import { Paper } from '@mui/material';
+import { IconButton, Paper } from '@mui/material';
 
 export default function IconAvatars() {
   return (
@@ -22,16 +22,17 @@ export default function IconAvatars() {
 
     }}>
       <Avatar>
-        <FolderIcon 
-        sx={{ 
+        <IconButton
+        component={PageviewIcon}
+        to="/">
+          onClick={console.log("ETA")}
+          sx={{ 
             
             '&:hover': {
                 bgcolor: 'gray',
-              opacity: [0.9, 0.8, 0.7],
-              
-              },
-       }}
-        />
+              opacity: [0.9, 0.8, 0.7],     
+              },}}
+          </IconButton>  
       </Avatar>
       <Avatar sx={{ 
           bgcolor: pink[500],
