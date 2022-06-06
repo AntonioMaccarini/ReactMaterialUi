@@ -1,9 +1,17 @@
 import { Box } from '@mui/material'
 import React from 'react'
+import Post from './Post'
+//import shrimps from 'static/images/cards/paella.jpg'
 
 const Feed = () => {
   return (
-    <Box bgcolor="pink" flex ={2} p={2} >Feed</Box>
+    <Box flex ={4} p={2} >
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+      
+    </Box>
   )
 }
 
