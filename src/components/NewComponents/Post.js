@@ -17,7 +17,7 @@ const Post = () => {
             <MoreVert />
           </IconButton>
         }
-        title="John Brelao"
+        title="John"
         subheader="September 14, 2016"
       />
       <CardMedia
